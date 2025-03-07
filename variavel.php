@@ -167,14 +167,14 @@ Exemplo de declaração de constante:
  echo $nuvem * $ventos;
  
  ?>
- 
+
  <h3>Exercicio 3</h3>
  <?php
- 
-   $gotas = 2000;
-   $abaju = 23032;
-   $_COOKIE =84654;
+   $descricao = "cookis gostosos";
+   $quantidade = 7;
+   $valor = 320;
 
+  echo "&descricao <br>quatidade: $quntidade <br>valor: $valor";
  ?>
 </div> <!-- Fecha container bootstrap -->
 <script src="bootstrap.bundle.min.js" ></script>
