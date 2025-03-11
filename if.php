@@ -201,7 +201,17 @@ considerando as seguintes regras:
 <li>Maior ou igual a 18 e menor que 60: Pode entrar.</li>
 <li>Maior ou igual a 60: Entrada gratuita.</li>
 <ul>
-
+<?php
+                $idade = rand(5, 75);
+                if ($idade < 18) {
+                    echo "<span>Não pode entrar.</span>";
+                } else if ($idade >= 18 && $idade < 60) {
+                    echo "<span>Pode entrar.";
+                } else {
+                    echo "Entrada gratuita.";
+                }
+            ?>
+____________
  
 </div>
 <script src="bootstrap.bundle.min.js" ></script>
