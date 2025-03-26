@@ -80,10 +80,9 @@
    <label>Idade</label>
 <input type="text" name="idade" value="">
 <br>
-<button type="submit">
-    Logar
-</button>
-
+<!-- <div class="d-grid gap-2 col-6 mx-auto"> -->
+<button class="btn btn-outline-primary" type="button">Logar</button>
+<!-- </div> -->
 </form>
 <br>
 
@@ -98,9 +97,7 @@ ao enviar com o método GET, exiba a soma desses dois números.
 <label>N2</label>
 <input  for="number" name="n2">
 <br>
-<button type="submit">
-  =
-</button>
+<button class="btn btn-outline-primary" type="button">=</button>
 
 </form>
 <br>
@@ -113,7 +110,7 @@ Quando o formulário for enviado com o método GET,
   <label>Nome</label>
    <input type="text" name= "nome">
    <br>
-   <button type="submit">logar</button>
+   <button class="btn btn-outline-primary" type="button">Logar</button>
     
    </form>
  <br>
@@ -123,34 +120,49 @@ Quando o formulário for enviado com o método GET,
   verifique se o nome de usuário e a senha são válidos
    (pode ser um simples exemplo de validação).
     
-    <form action="">
+    <form action="salvar_dados.php" method="post">
       
-      <label>Nome</label>
-      <input type="text" name="nome">
+      <label>Nome do Usuario</label>
+      <input type="text" name="eliz">
       <br>
       <label>Senha</label>
-      <input type="number" name="senha">
+      <input type="password" name="123321">
       <br>
-      <button type="submit">
-        logar
-      </button>
+      <button class="btn btn-outline-primary" type="button">Logar</button>
 
     </form>
    <br>
 5-Crie um formulário HTML que receba dois números e,
  ao enviar com o método POST, exiba o produto desses números.
-  <form action="">
-
+  <form action="salvar_dados.php" method="post">
+   
+  <label>Num1</label>
+      <input type="password" name="password1">
+      <br>
+      <label>Num2</label>
+      <input type="password" name="password2">
+      <br>
+      <button class="btn btn-outline-primary" type="button">Logar</button>
   </form>
  <br>
 6-Crie um formulário HTML que receba
  o nome e a mensagem de um usuário.
  Quando o formulário for enviado com o método POST,
   exiba a mensagem do usuário. 
-     <form action="">
-
-     </form>
+  <form action="salvar_dados.php" method="post">
+   
+   <label>Num1</label>
+       <input type="password" name="password1">
+       <br>
+       <label>Num2</label>
+       <input type="password" name="password2">
+       <br>
+       <button class="btn btn-outline-primary" type="button">Logar</button>
+   </form>
   <br>
+
+
+  
 <script src="bootstrap.bundle.min.js" ></script>
 </body>
 </html>
