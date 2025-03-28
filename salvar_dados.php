@@ -1,7 +1,7 @@
 <br>
 exercicio 1
 <br>
- <!-- <?php
+ <?php
 echo $_GET["login"];
 echo "<br>";
 echo $_GET["senha"];
@@ -9,19 +9,19 @@ echo $_GET["senha"];
 echo $_POST["login"];
 echo "<br>";
 echo $_POST["senha"];
-?>  -->
+?>  
 <br>
 exercicio 2
 <br>
- <!-- <?php
+ <?php
 echo $_GET["nome"];
 echo "<br>";
 echo $_GET["idade"];
-?>  -->
+?>  
 <br>
 exercicio 3
 <br>
-<!-- <?php
+ <?php
 
 $num1= $_GET["n1"];
 echo "<br>";
@@ -39,7 +39,7 @@ echo "Olá,$f"
 ?> 
 <br>
 execicio 5
-<!-- <br>
+ <br>
  <?php
  $nome = $_POST ['eliz'];
  $senha = $_POST ['123321'];
@@ -48,12 +48,12 @@ execicio 5
  echo "<br>";
  echo ($senha == "123321") ? $senha :  "essa senha não estar correta";
 
-?>  -->
+?> 
 <br>
 execicio 6
 <br>
-<!-- <?php
+ <?php
 
 
 
-?> -->
+?> 
