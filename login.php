@@ -1,15 +1,33 @@
-<form action="verificar_login.php" method="post">
-    <br/> Email:
-    <input type="text" class="form-control" name="Email"/>
-    <br/>Senha:
-    <input type="password" class="form-control" name="senha"/>
-    <?php if(isset($_GET["erro"]) && !empty($_GET["erro"]))
-    {
-        echo $_GET["erro"];
-    }
-    ?>
-    <br/>
-    <button type="submit">
-        logar
-    </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body class="container">
+   <div class="row">
+<form style="background-color:#557700">
+<img src="download.jpg" class="rounded-0" alt="...">
+<br>
+    <label for="exampleInputEmail1" class="form-label">Login</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Senha</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Mostra senha</label>
+  </div>
+  <button type="button" class="btn btn-secondary btn-lg">Logar</button>
 </form>
+</div>
+<script src="bootstrap.bundle.min.js" ></script>
+<script src="bootstrap.min.css" ></script>
+</body>
+</html>
