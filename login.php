@@ -8,8 +8,19 @@
     <title>Document</title>
 </head>
 <body class="container">
-   <div class="row">
-<form style="background-color:#557700">
+<div class="row">
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+</div>
+<div class="row">
+  <div class="col-sm"></div>
+  <div class="col-sm"></div>
+  <div class="col-sm"></div>
+</div>
+   <!-- <div class="offset-3 col-6"> -->
+<form style="background-color:#557700" class="col-lg: 992px">
 <img src="download.jpg" class="rounded-0" alt="...">
 <br>
     <label for="exampleInputEmail1" class="form-label">Login</label>
@@ -27,6 +38,7 @@
   <button type="button" class="btn btn-secondary btn-lg">Logar</button>
 </form>
 </div>
+<!-- </div> -->
 <script src="bootstrap.bundle.min.js" ></script>
 <script src="bootstrap.min.css" ></script>
 </body>
