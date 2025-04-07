@@ -20,7 +20,7 @@
   <div class="col-sm"></div>
 </div>
    <!-- <div class="offset-3 col-6"> -->
-<form style="background-color:#557700" class="col-lg: 992px">
+<form style="background-color:#0000FF" class="col-lg: 992px">
 <img src="download.jpg" class="rounded-0" alt="...">
 <br>
     <label for="exampleInputEmail1" class="form-label">Login</label>
