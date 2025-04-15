@@ -18,8 +18,8 @@
     }
     
   ///////////////////////////bloco para inserir usuario////////////////////////////
-    //$sql_insert = "INSERT INTO USUARIOS (LOGIN, SENHA) VALUES ('ADMIN','123');";
-    $sql_insert = "selet " from usuario";
+    $sql_insert = "INSERT INTO USUARIOS (LOGIN, SENHA) VALUES ('ADMIN','123');";
+    //$sql_insert = "selet " from usuario";
  
     if ($conexao->query($sql_insert)) {
         echo "Nova linha inserida com sucesso.<br>";
