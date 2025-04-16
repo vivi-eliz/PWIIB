@@ -1,5 +1,5 @@
 <?php  include "cabecalho.php"; ?>
- <?php echo "<h1> Index do nosso progeto </h1>"; ?>
+ <?php echo "<h1> ☼ </h1>"; ?>
 
  <button class="btn btn-success" onclick="Piscar(this)" >
     Piscando meu botão
