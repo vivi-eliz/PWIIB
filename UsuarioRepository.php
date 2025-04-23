@@ -28,5 +28,4 @@ class UsuarioRepository{
         return $resultado->fetch_assoc();
     }
 }
-
 ?>
