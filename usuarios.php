@@ -25,7 +25,7 @@
       <div class="card-body">
      <div class="row">
       <div class="col-4">
-        <a class="btn btn-success">
+        <a href="novo_usuario.php" class="btn btn-success">
           Novo usuário
         </a>
       </div>
