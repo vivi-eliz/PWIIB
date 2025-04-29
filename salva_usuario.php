@@ -1,8 +1,13 @@
 <?php
 include "conexao.php";
+require_once "UsuarioRepository.php";
+$repo = new UsuarioRepository($conexao);
+
 if(isset($_POST["salva_usuario"]))
 {
-    echo"Aqui vai a logica de salva no banco";
+    $ativo = isset( $_POST['ativo'] ) ? $_POST['ativo'] : false ;
+    $repo->Inserir($_POST['login'],$_POST['senha'],$ativo);
+    header('location: usuarios.php');
 }
 else
 {

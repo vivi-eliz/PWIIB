@@ -55,8 +55,8 @@
             foreach ($usuarios as $item)
             {
               echo "<tr>
-                      <td>$item[LOGIN]</td>
                       <td>$item[ID]</td>
+                      <td>$item[LOGIN]</td>
                       <td>$item[ATIVO]</td>
                       <td></td>
                    </tr>";

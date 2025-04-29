@@ -11,10 +11,10 @@
            <label>Senha</label>
            <input type="passoword" name="senha" class="form-control" />
            <br>
-           <input type="checkbox" name="ativo" value="Usuário Ativo" />
+           <input type="checkbox" name="ativo" value="1" />
            Usuário Ativo
            <br>
-           <button nome="salva_usuario" type="submit" class="btn btn-primary">
+           <button name="salva_usuario" type="submit" class="btn btn-primary">
               Salva usuário
            </button>
        </form>
