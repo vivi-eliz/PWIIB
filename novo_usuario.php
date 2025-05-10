@@ -14,7 +14,7 @@
            <input type="checkbox" name="ativo" value="1" />
            Usuário Ativo
            <br>
-           <button name="salva_usuario" type="submit" class="btn btn-primary">
+           <button name="salva_usuario" type="submit" class="btn btn-outline-primary">
               Salva usuário
            </button>
        </form>

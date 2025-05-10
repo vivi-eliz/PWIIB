@@ -25,7 +25,7 @@
       <div class="card-body">
      <div class="row">
       <div class="col-4">
-        <a href="novo_usuario.php" class="btn btn-success">
+        <a href="novo_usuario.php" class="btn btn-outline-success">
           Novo usuário
         </a>
       </div>
@@ -33,7 +33,7 @@
         <input name="buscar" class="form-control" />
       </div>
       <div class="col-4">
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-outline-primary">
           Pesquisar
         </button>
       </div>
@@ -59,10 +59,10 @@
                       <td>$item[LOGIN]</td>
                       <td>$item[ATIVO]</td>
                       <td>
-                         <a class= 'btn btn-danger'
+                         <a class= 'btn btn-outline-danger'
                                href='Excluir_Usuarios.php?id=".$item['ID']."'>Excluir</a>
-                         <a class= 'btn btn-warning'   
-                               href='editar_Usuarios.php?id=".$item['ID']."'>Editar</a>   
+                         <a class= 'btn btn-outline-warning'   
+                               href='editar_Usuario.php?id=".$item['ID']."'>Editar</a>   
                       </td>
                    </tr>";
             }
