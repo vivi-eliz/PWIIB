@@ -54,5 +54,17 @@ class UsuarioRepository{
         $preparar->bind_param("i",$id);
         $preparar->execute();
     }
+
+    public function Pesquisar($busca)
+    {
+
+        $sql = "select * from usuarios where LOGIN like '%$busca%' ";
+        $resultado = $this->conexao->query($sql);
+        $usuarios = [];
+        while ($row = $resultado->fetch_assoc()) {
+            array_push($usuarios, $row);
+        }
+       return $usuarios;
+    }
 }
 ?>

@@ -8,11 +8,22 @@
   $repo = new UsuarioRepository($conexao);
   //Chamei o metodo BuscarTodos para puxar
   //todos usuarios do banco de dados
-  $usuarios = $repo->buscarTodos();
+
+  if(isset($_GET['busca']) && !empty($_GET['busca']))
+  {
+    $usuarios = $repo->Pesquisar($_GET['busca'] );
+  }
+  else
+  {
+    //Chamei o metodo BuscarTodos para puxar
+   //todos usuarios do banco de dados
+   $usuarios = $repo->buscarTodos();
+  }
+
  //foreach serve para ler todos os usuarios
  //vindos do banco em formato de array chave valor
-  foreach ($usuarios as $item)
-
+ foreach ($usuarios as $item)
+                          
  ?>
 
 <div class="row">
@@ -23,6 +34,7 @@
       <b>Lista de usuarios</b>
     </div>
       <div class="card-body">
+        <form action="usuarios.php" method="get">
      <div class="row">
       <div class="col-4">
         <a href="novo_usuario.php" class="btn btn-outline-success">
@@ -30,7 +42,7 @@
         </a>
       </div>
       <div class="col-4">
-        <input name="buscar" class="form-control" />
+        <input name="busca" class="form-control" />
       </div>
       <div class="col-4">
         <button type="submit" class="btn btn-outline-primary">
@@ -38,6 +50,7 @@
         </button>
       </div>
      </div>
+     </form>
      <div class="row">
        <table class="table table-striped">
          <thead>
