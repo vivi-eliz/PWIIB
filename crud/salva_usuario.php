@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "./InicioeFim/conexao.php";
 require_once "UsuarioRepository.php";
 $repo = new UsuarioRepository($conexao);
 

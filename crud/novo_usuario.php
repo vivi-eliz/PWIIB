@@ -1,4 +1,4 @@
-<?php  include "cabecalho.php"; 
+<?php  include "./InicioeFim/cabecalho.php"; 
         include "conexao.php"
 ?>
 
@@ -21,4 +21,4 @@
     </div>
 </div>
 
-<?php include "rodape.php"; ?>
+<?php include "./InicioeFim/rodape.php"; ?>

@@ -1,5 +1,5 @@
 
-<?php  include "cabecalho.php"; ?>
+<?php  include "./InicioeFim/cabecalho.php"; ?>
 <br>
 
 1- Crie um formulário HTML que solicite o 
@@ -97,6 +97,6 @@ Quando o formulário for enviado com o método GET,
 
 
   
-  <?php  include "rodape.php"; ?>
+  <?php  include "./InicioeFim/rodape.php"; ?>
 </body>
 </html>

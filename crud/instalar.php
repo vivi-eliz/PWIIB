@@ -1,6 +1,6 @@
 <?php
 
-include "conexao.php";
+include "./InicioeFim/conexao.php";
 
 $sql = "CREATE TABLE IF NOT EXISTS USUARIOS (
             ID INT PRIMARY KEY AUTO_INCREMENT,

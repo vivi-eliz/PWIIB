@@ -1,4 +1,4 @@
-<?php  include "cabecalho.php"; ?>
+<?php  include "./InicioeFim/cabecalho.php"; ?>
  <?php echo "<h1> ☼ </h1>"; ?>
 
  <button class="btn btn-success" onclick="Piscar(this)" >
@@ -19,5 +19,5 @@
     }
 </script>
 
- <?php  include "rodape.php"; ?>
+ <?php  include "./InicioeFim/rodape.php"; ?>
 

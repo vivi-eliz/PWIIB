@@ -1,5 +1,5 @@
 <?php
-   include "cabecalho.php";
+   include "./InicioeFim/cabecalho.php";
    include "conexao.php";
    //Inclui o arquivo da classe Ropository do usuário
   require_once  'UsuarioRepository.php';
@@ -89,5 +89,5 @@
 </div>
 
 <?php
-  include "rodape.php"; 
+  include "./InicioeFim/rodape.php"; 
 ?>

@@ -1,7 +1,7 @@
 <?php
 include "conexao.php";
 require_once "UsuarioRepository.php";
-include "cabecalho.php";
+include "./InicioeFim/cabecalho.php";
 if (isset ($_GET['id']) && !empty ($_GET['id']))
 {
     $repo = new UsuarioRepository($conexao);
@@ -53,4 +53,4 @@ else
 </div>
 
 
-<?php include "rodape.php"; ?>
+<?php include "./InicioeFim/rodape.php"; ?>
