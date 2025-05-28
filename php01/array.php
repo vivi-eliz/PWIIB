@@ -1,65 +1,70 @@
-<?php  include "cabecalho.php"; ?>
-
-
-
- 
-<h1>array</h1>
+<?php include "cabecalho.php"; ?>
+<h1>Array</h1>
 <p>
-   São variaveis que podem guandar uma lista de valores 
-   identificados por indice ou chave. 
-
+São variaveis que podem guardar uma lista de valores 
+identificados por indice ou chave.
 </p>
 <pre>
-  $frutas = ["Bananas", "Maçã", "Abacaxi" , "Mamão" , 10 , true, array(), [] ];
-  //ou
-  $frutas = array("Abacaxi", "Maça", "Banana", "Mamão");
+  $frutas = ["banana", "Maçã" , "Abacaxi", "mamão", 10, true, array(), [] ];
+  //ou 
+  $frutas = array("banana", "Maçã" , "Abacaxi", "mamão");
 </pre>
+<?php           //0       1         2         3
+  $frutas = ["banana", "Maçã" , "Abacaxi", "mamão" ];
+  echo "<br>$frutas[2]";
 
-<?php
-   $frutas = ["Bananas", "Maçã", "Abacaxi" , "Mamão"];
-   echo "<br>$frutas[2]";
-
-   for($i = 0; $i < count($frutas); $i++)
-   {
-     echo"<br> $frutas[$i]";
-   }
-
-   array_push($frutas,"Limão");
-   for($i = 0; $i < count($frutas); $i++)
-   {
-    echo"<br> $frutas[$i]";
+  for($i = 0; $i < count($frutas); $i++ )
+  {
+      echo "<br> $frutas[$i]";
   }
-   array_push($frutas, rand(1, 75));
-   for($i = 0; $i < count($frutas); $i++)
-   {
-    echo"<br> $frutas[$i]";
+
+  array_push($frutas,"Limão");
+
+  array_push($frutas, rand(1,75) );
+
+  for($i = 0; $i < count($frutas); $i++ )
+  {
+      echo "<br> $frutas[$i]";
   }
 
 
+  $b = array( rand(1,15), rand(1,15), rand(1,15), rand(1,15), rand(1,15) );
+  
+  $i = [];
+  for($j = 0; $j<5; $j++){
+    $i[$j] = rand(16,30); 
+  }
 
+  $n = [];
+  for($j = 0; $j<5; $j++){
+    $n[$j] = rand(31,45); 
+  }
 
-  $B = [];
-for($h = 0; $h<5; $h++){
-  $B[$h] = rand(1,15);
-}
-$I = [];
-for($h = 0; $h<5; $h++){
-  $I[$h] = rand(16,30);
-}
-$N =[];
-for($h = 0; $h<5; $h++){
-  $N[$h] = rand(31,45);
-}
-$G =[];
-for($h = 0; $h<5; $h++){
-  $G[$h] = rand(46,60);
-}
-$O =[];
-for($h = 0; $h<5; $h++){
-  $O[$h] = rand(61,75);
-}
+  $g = array();
+  for($j = 0; $j<5; $j++){
+    $g[$j] = rand(46,60); 
+  }
 
+  $o = array();
+
+  for($j = 0; $j<5; $j++){
+    $o[$j] = rand(61,75); 
+  }
 ?>
+
+
+
+
+<style>
+  table, tr, td{
+    border: 1px solid;
+    font-size:50px;
+    padding:20px;
+  }
+
+  </style>
+
+
 <table border="5">
     <tr>
       <td>B</td>
@@ -72,26 +77,30 @@ for($h = 0; $h<5; $h++){
       for($ifor=0; $ifor < 5; $ifor++)
       {
         echo "<tr>";
-        echo "<td>$B[$ifor]</td>";  
-        echo "<td>$I[$ifor]</td>";
-        echo "<td>$N[$ifor]</td>";
-        echo "<td>$G[$ifor]</td>";
-        echo "<td>$O[$ifor]</td>";
+        echo "<td>$b[$ifor]</td>";  
+        echo "<td>$i[$ifor]</td>";
+        echo "<td>$n[$ifor]</td>";
+        echo "<td>$g[$ifor]</td>";
+        echo "<td>$o[$ifor]</td>";
         echo "</tr>";
       }
-  
-  ?>
+    ?>
+
 </table>
 
-<h1> Sorteio</h1>
+<h1>Sorteio</h1>
 <?php
- $Sorteio = array(12,7,3,9,5,2,41,11,8,13,6,14,15,10,19);
 
- for ($i=0 ; $i < 15 ; $i++ )
- {
-   echo "<h2>Rodada ".($i+1)."número sorteado é : $Sorteio[$i]</h2>";
- }
+$Sorteio = array(12,7,3,9,5,2,4,1,11,8,13,6,14,15,10);
+
+for ($i=0 ; $i < 15 ; $i++  ) 
+{ 
+    echo "<h2>Rodada ".($i+1)." número sorteado é : $Sorteio[$i]</h2>";
+}
+
+
 ?>
-</body>
-</html>
-<?php  include "rodape.php"; ?>
+
+
+
+<?php include "rodape.php"; ?>
