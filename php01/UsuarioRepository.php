@@ -48,7 +48,7 @@ class UsuarioRepository {
         $resultado = $stmt->get_result();
         return $resultado->fetch_assoc();
     }
-
+// 2 parte
 
     public function Inserir($login, $senha, $ativo)
     {

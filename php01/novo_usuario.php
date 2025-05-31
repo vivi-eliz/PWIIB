@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-4 offset-4">
        <form action="salva_usuario.php" method="post">
-           <label>Login</label>
+           <label>Disciplinas</label>
            <input type="text" name="login" class="form-control" />
            <br>
            <label>Senha</label>
