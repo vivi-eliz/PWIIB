@@ -18,9 +18,9 @@ class disciplinasRepository {
         return $disciplinas;
     }
 
-    public function Pesquisar($id)
+    public function Pesquisar($busca)
     {
-        $sql = "SELECT * FROM disciplinas WHERE LOGIN like '%$id%' ";
+        $sql = "SELECT * FROM disciplinas WHERE DISCIPLINA like '%$busca%' ";
         $resultado = $this->conexao->query($sql);
         $disciplinas = [];
         while ($row = $resultado->fetch_assoc()) {
@@ -56,7 +56,14 @@ class disciplinasRepository {
         $resultado = $stmt->get_result();
         return $resultado->fetch_assoc();
     }
-    // 2 parte
+
+    public function disciplinas_excluir($id)
+    {
+        $sql = "DELETE FROM disciplinas where id = ?";
+        $preparar = $this->conexao->prepare($sql);
+        $preparar->bind_param("i",$id);
+        $preparar->execute();
+    }
 
 }
 ?>

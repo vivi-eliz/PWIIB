@@ -50,14 +50,13 @@ class UsuarioRepository {
     }
 // 2 parte
 
-    public function Inserir($login, $senha, $ativo)
+    public function Inserir($disciplinas)
     {
-        echo $ativo;
         
-        $sql = "INSERT INTO usuarios (LOGIN, SENHA, ATIVO) 
-                VALUES (?, ?, ?);";
+        $sql = "INSERT INTO usuarios (DISCIPLINAS) 
+                VALUES (?);";
                 $stmt = $this->conexao->prepare($sql);
-                $stmt->bind_param("ssi", $login,$senha,$ativo);
+                $stmt->bind_param("s",$disciplinas);
                 $stmt->execute();
     }
 

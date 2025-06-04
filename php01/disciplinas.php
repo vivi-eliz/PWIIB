@@ -4,9 +4,9 @@
     require_once  "./disci/disciplinasRepository.php";
     $repo = new disciplinasRepository($conexao);
 
-    if(isset($_GET['id']) && !empty($_GET['id']))
+    if(isset($_POST['id']) && !empty($_POST['id']))
   {
-    $disciplinas = $repo->Pesquisar($_GET['id'] );
+    $disciplinas = $repo->Pesquisar($_POST['id'] );
   }
   else
   {
@@ -33,7 +33,7 @@
         </a>
       </div>
       <div class="col-4">
-        <input name="busca" class="form-control" />
+        <input name="disciplinas" class="form-control" />
       </div>
       <div class="col-4">
         <button type="submit" class="btn btn-outline-primary">
@@ -53,6 +53,32 @@
          </thead>
          <tbody>
           <?php
+//foreach serve para ler todos os usuarios
+//vindos do banco em formato de array chave valor
+foreach ($disciplinas as $item)
+{
+  echo "<tr>
+          <td>$item[DISCIPLINA]</td>
+          <td>
+             <a class= 'btn btn-outline-danger'
+                   href='./disci/disciplinas_excluir.php?id=".$item['ID']."'>Excluir</a>
+             <a class= 'btn btn-outline-warning'   
+                   href='./disci/disciplinas_Editar.php?id=".$item['ID']."'>Editar</a>   
+          </td>
+       </tr>";
+}
+?>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<?php
+include "rodape.php"; 
+?>
 
 
 
