@@ -1,6 +1,6 @@
 <?php  include "./InicioeFim/cabecalho.php"; 
-       include "disciplinasRepository.php";
-       include "conexao.php"
+       include "./disci/disciplinasRepository.php";
+       include "conexao.php";
 
        if (isset ($_GET['id']) && !empty ($_GET['id']))
 {
@@ -18,15 +18,25 @@ else
         <div class="card">
             <div class="card-header">editar disciplinas</div>
               <div class="card-body">
-                <form action="disciplinas_Editar_Salvar.php" method="post">
-                    <label>Disciplinas</label>
-                    <input type="text" value="<?php echo $usuario ['LOGIN'] ?>" class="form-control" name="LOGIN" />
-                    <br/>
-                        <?php
-                           if($disciplinas["ATIVO"])
-                        ?>
-                     </select>
-                     <br/>
+
+              <form action="disciplina_salvar_edicao.php" method="post">
+                    <label>Id</label>
+                    <input type="text"
+                            value="<?php echo $obj['ID'] ?>"
+                            class="form-control"
+                            name="id"
+                            readonly 
+                             />
+                    <br />
+                    <label>Nome</label>
+                    <input type="text"
+                            value="<?php echo $obj['DISCIPLINA'] ?>"
+                            class="form-control"
+                            name="nome"
+                             />
+                    <br />
+                  
+
                      <button class="btn btn-outline-success" type="submit">
                          Salvar Usuário
                      </button>
