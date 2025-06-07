@@ -19,7 +19,7 @@ else
             <div class="card-header">editar disciplinas</div>
               <div class="card-body">
 
-              <form action="disciplina_salvar_edicao.php" method="post">
+              <form action="disciplina_salvar_editar.php" method="post">
                     <label>Id</label>
                     <input type="text"
                             value="<?php echo $obj['ID'] ?>"
@@ -32,7 +32,7 @@ else
                     <input type="text"
                             value="<?php echo $obj['DISCIPLINA'] ?>"
                             class="form-control"
-                            name="nome"
+                            name="DISCIPLINAS"
                              />
                     <br />
                   

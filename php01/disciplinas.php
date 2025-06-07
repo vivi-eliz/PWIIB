@@ -25,7 +25,7 @@
       <b>Lista de Disciplinas</b>
     </div>
       <div class="card-body">
-        <form action="usuarios.php" method="get">
+        <form action="disciplinas.php" method="get">
      <div class="row">
       <div class="col-4">
         <a href="disciplinas_novo.php" class="btn btn-outline-success">
@@ -61,9 +61,9 @@ foreach ($disciplinas as $item)
           <td>$item[DISCIPLINA]</td>
           <td>
              <a class= 'btn btn-outline-danger'
-                   href='./disci/disciplinas_excluir.php?id=".$item['ID']."'>Excluir</a>
+                   href='./disci/disciplinas_excluir.php'>Excluir</a>
              <a class= 'btn btn-outline-warning'   
-                   href='./disci/disciplinas_Editar.php?id=".$item['ID']."'>Editar</a>   
+                   href='./disci/disciplinas_editar.php?id=".$item['ID']."'>Editar</a>   
           </td>
        </tr>";
 }
