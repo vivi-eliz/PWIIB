@@ -4,9 +4,9 @@
     require_once  "./disci/disciplinasRepository.php";
     $repo = new disciplinasRepository($conexao);
 
-    if(isset($_POST['id']) && !empty($_POST['id']))
+    if(isset($_GET['busca']) && !empty($_GET['busca']))
   {
-    $disciplinas = $repo->Pesquisar($_POST['id'] );
+    $disciplinas = $repo->Pesquisar($_GET['busca'] );
   }
   else
   {
@@ -33,7 +33,7 @@
         </a>
       </div>
       <div class="col-4">
-        <input name="disciplinas" class="form-control" />
+        <input name="busca" class="form-control" />
       </div>
       <div class="col-4">
         <button type="submit" class="btn btn-outline-primary">
@@ -61,19 +61,19 @@ foreach ($disciplinas as $item)
           <td>$item[DISCIPLINA]</td>
           <td>
              <a class= 'btn btn-outline-danger'
-                   href='./disci/disciplinas_excluir.php'>Excluir</a>
+                   href='./disci/disciplinas_excluir.php?id=".$item['ID']."'>Excluir</a>
              <a class= 'btn btn-outline-warning'   
-                   href='./disci/disciplinas_editar.php?id=".$item['ID']."'>Editar</a>   
+                   href='./disciplinas_Editar.php?id=".$item['ID']."'>Editar</a>   
           </td>
        </tr>";
 }
 ?>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
+                   </tbody>
+                </table>
+             </div>
+          </div>
+       </div>
+    </div>
 </div>
 
 <?php

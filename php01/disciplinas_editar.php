@@ -5,7 +5,7 @@
        if (isset ($_GET['id']) && !empty ($_GET['id']))
 {
     $repo = new disciplinasRepository($conexao);
-    $usuario = $repo->buscarPorId($_GET['id']);
+    $disciplinas= $repo->buscarPorId($_GET['id']);
 }
 else
 {
@@ -19,20 +19,20 @@ else
             <div class="card-header">editar disciplinas</div>
               <div class="card-body">
 
-              <form action="disciplina_salvar_editar.php" method="post">
+              <form action="./disci/disciplinas_Editar_Salvar.php" method="post">
                     <label>Id</label>
                     <input type="text"
-                            value="<?php echo $obj['ID'] ?>"
+                            value="<?php echo $disciplinas['ID'] ?>"
                             class="form-control"
-                            name="id"
+                            name="ID"
                             readonly 
                              />
                     <br />
-                    <label>Nome</label>
+                    <label>disciplinas</label>
                     <input type="text"
-                            value="<?php echo $obj['DISCIPLINA'] ?>"
+                            value="<?php echo $disciplinas['DISCIPLINA'] ?>"
                             class="form-control"
-                            name="DISCIPLINAS"
+                            name="DISCIPLINA"
                              />
                     <br />
                   

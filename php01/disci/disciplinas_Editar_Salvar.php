@@ -1,15 +1,16 @@
 <?php
-include "conexao.php";
+include "../conexao.php";
 require_once "disciplinasRepository.php";
 $repo = new disciplinasRepository($conexao);
 
-if(isset($_POST['DISCIPLINAS']) )
+if( isset($_POST["ID"]) )
+
 {
-    $repo->Editar($_POST['DISCIPLINAS']);
-    header('location: disciplinas.php');
+    $repo->Editar($_POST['DISCIPLINA'],$_POST['ID']);
+    header('location: ../disciplinas.php');
 }
 else
 {
-    header('location: disciplinas.php');
+   header('location: ../disciplinas.php');
 }
 ?>

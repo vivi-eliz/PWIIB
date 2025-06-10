@@ -23,20 +23,21 @@ class disciplinasRepository {
         $sql = "SELECT * FROM disciplinas WHERE DISCIPLINA like '%$busca%' ";
         $resultado = $this->conexao->query($sql);
         $disciplinas = [];
-        while ($row = $resultado->fetch_assoc()) {
+        while ($row = $resultado->fetch_assoc())
+        {
             array_push($disciplinas, $row);
         }
         return $disciplinas;
     }
 
-    public function editar($id, $nome) {
-        $stmt = $this->conexao->prepare(
-            "SELECT * FROM disciplinas WHERE id = ?");
-        $stmt->bind_param("i", $id);
+    public function Editar( $disciplinas, $id) 
+    {
+       $sql = "UPDATE DISCIPLINAS set DISCIPLINA = ? where ID =?";
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->bind_param("si",$disciplinas, $id);
         $stmt->execute();
 
-        $resultado = $stmt->get_result();
-        return $resultado->fetch_assoc();
+  
     }
     public function Inserir($disciplinas)
     {
