@@ -1,11 +1,10 @@
 <?php
-    include "../cabecalho.php"; 
-    include "../conexao.php";
+    include "./InicioeFim/cabecalho.php"; 
+    include "conexao.php";
     require_once './disci/disciplinasRepository.php';
-    require_once 'PerguntasRepository.php';
+    require_once './pergu/PerguntasRepository.php';
 
-    //Crio um objeto do tipo DisciplinaRepository chamado repo
-    //E recebe a conexão como parametro
+    
     $repoDisciplina = new DisciplinaRepository($conexao);
     $repo = new PerguntaRepository($conexao);
 
@@ -15,8 +14,7 @@
     }
     else
     {
-        //Chamei o metodo BuscarTodos para puxar 
-        // todos usuarios do banco de dados
+       
         $obj = $repo->buscarTodos();
     }
     
