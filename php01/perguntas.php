@@ -2,10 +2,10 @@
     include "./InicioeFim/cabecalho.php"; 
     include "conexao.php";
     require_once './disci/disciplinasRepository.php';
-    require_once './pergu/PerguntasRepository.php';
+    require_once './pergu/PerguntaRepository.php';
 
     
-    $repoDisciplina = new DisciplinaRepository($conexao);
+    $repoDisciplina = new disciplinasRepository($conexao);
     $repo = new PerguntaRepository($conexao);
 
     if( isset($_GET['busca']) && !empty($_GET['busca']) )

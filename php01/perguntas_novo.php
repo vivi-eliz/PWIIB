@@ -9,7 +9,7 @@
                 Cadastro de perguntas
             </div>
             <div class="card-body">
-        <form action="pergunta_salvar.php" method="post">
+        <form action="./pergu/pergunta_salvar.php" method="post">
             
             <label>Pergunta</label>
             <textarea name="PERGUNTA" class="form-control"></textarea>

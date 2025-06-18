@@ -40,7 +40,7 @@ class referenciasRepository {
                 $stmt->execute();
     }
 
-    public function excluiReferencias($id)
+    public function referencias_excluir($id)
     {
         $sql = "DELETE FROM REFERENCIAS where id = ?";
         $preparar = $this->conexao->prepare($sql);

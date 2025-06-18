@@ -63,16 +63,13 @@
                         <tbody>
 
                             <?php
-
-                                //foreach serve para ler todos os usuarios
-                                // vindo do banco em formato de array chave e valor
                                 foreach ($referencias as $item ) {
                                     echo "<tr>
                                             <td>$item[ID]</td>
                                            <td>$item[NOME]</td>
                                            
                                            <td>
-                                                <a class='btn btn-outline-danger' href='./refe/referencias_excluir.php?id=".$item['ID']."'>
+                                                <a class='btn btn-outline-danger' href='./referen/referencias_excluir.php?id=".$item['ID']."'>
                                                 Excluir
                                                 </a>
 
