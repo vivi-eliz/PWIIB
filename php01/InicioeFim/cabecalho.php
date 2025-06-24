@@ -85,19 +85,23 @@
        <li class="nav-item">
             <a class="nav-link" href="https://github.com/vivi-eliz/PWIIB" > Acesse o Github por aqui </a>
         </li>
-        <li class="nav-item dropdown">
+         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             php
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="variavel.php">Variável</a></li>
+            <!-- <li><a class="dropdown-item" href="variavel.php">Variável</a></li>
             <li><a class="dropdown-item" href="if.php">If</a></li>
             <li><a class="dropdown-item" href="while.php">While</a></li>
             <li><a class="dropdown-item" href="for.php">For</a></li>
             <li><a class="dropdown-item" href="switch.php">Switch</a></li>
-            <li><a class="dropdown-item" href="array.php">Array/Vetor</a></li>
+            <li><a class="dropdown-item" href="array.php">Array/Vetor</a></li>  -->
+            <li><a class="dropdown-item" href="disciplinas.php">disciplinas</a></li>
+            <li><a class="dropdown-item" href="perguntas.php">perguntas</a></li>
+            <li><a class="dropdown-item" href="usuarios.php">usuarios</a></li>
+            <li><a class="dropdown-item" href="referencias.php">referencias</a></li>
           </ul>
-        </li><!--Fim do menu dropdonw -->
+        </li>Fim do menu dropdonw 
         <li class="nav-item">
             <a class="nav-link" href="instalar.php" > 
               Instalar o banco 

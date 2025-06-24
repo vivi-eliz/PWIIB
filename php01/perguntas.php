@@ -2,7 +2,7 @@
     include "./InicioeFim/cabecalho.php"; 
     include "conexao.php";
     require_once './disci/disciplinasRepository.php';
-    require_once './pergu/PerguntaRepository.php';
+    require_once './pergu/perguntasRepository.php';
 
     
     $repoDisciplina = new disciplinasRepository($conexao);
@@ -31,7 +31,7 @@
              <form action="perguntas.php" method="get">
                 <div class="row">
                         <div class="col-4">
-                            <a href="pergunta_novo.php" class="btn btn-success">
+                            <a href="perguntas_novo.php" class="btn btn-success">
                                 Novo
                             </a>
                         </div>
