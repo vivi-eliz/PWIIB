@@ -1,12 +1,12 @@
 <?php
-include "../dados/conexao.php";
-require_once "./alternativasRepository.php";
+include "../conexao.php";
+require_once "./AlternativaRepository.php";
 
-$repo = new AlternativaRepository($conexao);
+$repo = new AlternativasRepository($conexao);
 
 $id = $_GET['id'];
 $idPergunta = $_GET['id_pergunta'];
 
 $repo->excluir($id);
 
-header("Location: ../alternativas.php?id=" . $idPergunta);
+header("Location: ../alternativa.php?id=" . $idPergunta);

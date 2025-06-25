@@ -1,8 +1,8 @@
 <?php
-include "../dados/conexao.php";
-require_once "./alternativasRepository.php";
+include "../conexao.php";
+require_once "./AlternativaRepository.php";
 
-$repo = new AlternativaRepository($conexao);
+$repo = new AlternativasRepository($conexao);
 
 $id = $_POST['id'];
 $idPergunta = $_POST['id_pergunta'];
@@ -11,4 +11,4 @@ $correta = $_POST['correta'] == "1" ? 1 : 0;
 
 $repo->editar($id, $texto, $correta);
 
-header("Location: ../alternativas.php?id=" . $idPergunta);
+header("Location: ../alternativa.php?id=" . $idPergunta);

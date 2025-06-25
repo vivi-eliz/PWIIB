@@ -30,9 +30,9 @@ $alternativas = $repoAlt->buscarPorPergunta($idPergunta);
                 <td><?= htmlspecialchars($alt['TEXTO']) ?></td>
                 <td><?= $alt['CORRETA'] ? 'Sim' : 'Não' ?></td>
                 <td>
-                    <a href="alternativas_editar.php?id=<?= $alt['ID'] ?>" class="btn btn-warning">Editar</a>
+                    <a href="./alternativa_editar.php?id=<?= $alt['ID'] ?>" class="btn btn-warning">Editar</a>
 
-                    <a href="./alter/alternativas_excluir.php?id=<?= $alt['ID'] ?>&id_pergunta=<?= $idPergunta ?>" class="btn btn-danger">Excluir</a>
+                    <a href="./alter/Alternativas_excluir.php?id=<?= $alt['ID'] ?>&id_pergunta=<?= $idPergunta ?>" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
             <?php endforeach ?>

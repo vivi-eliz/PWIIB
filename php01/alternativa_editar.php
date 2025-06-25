@@ -10,7 +10,7 @@ $alt = $repo->buscarPorId($id);
 
 <div class="container mt-4">
     <h4>Editar Alternativa</h4>
-    <form action="./alter/Alternativa_editar_salvar.php" method="post">
+    <form action="./alter/Alternativas_editar_salvar.php" method="post">
         <input type="hidden" name="id" value="<?= $alt['ID'] ?>">
         <input type="hidden" name="id_pergunta" value="<?= $alt['ID_PERGUNTA'] ?>">
 
