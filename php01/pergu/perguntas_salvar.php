@@ -1,7 +1,7 @@
 <?php
 include "../conexao.php";
 require_once "../pergu/perguntasRepository.php";
-$repo = new PerguntaRepository($conexao);
+$repo = new perguntasRepository($conexao);
 
 
 if( isset($_POST["salvar_pergunta"]) )

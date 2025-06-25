@@ -1,12 +1,12 @@
 <?php
-    include "./InicioeFim/cabecalho.php"; 
-    include "conexao.php";
+   include "./InicioeFim/cabecalho.php";
+   include "conexao.php";
     require_once './disci/disciplinasRepository.php';
     require_once './pergu/perguntasRepository.php';
 
     
     $repoDisciplina = new disciplinasRepository($conexao);
-    $repo = new PerguntaRepository($conexao);
+    $repo = new perguntasRepository($conexao);
 
     if( isset($_GET['busca']) && !empty($_GET['busca']) )
     {
@@ -67,11 +67,11 @@
                                         <td>".$row['ID_DISCIPLINA']."</td>
                                         <td>
                                          <a class='btn btn-primary'
-                                                 href='pergunta_add_alternativa.php?id=".$row['ID']."'>Alternativas</a>
+                                                 href='alternativa.php?id=".$row['ID']."'>Alternativas</a>
                                             <a class='btn btn-danger'
-                                                 href='pergunta_excluir.php?id=".$row['ID']."'>Excluir</a>
+                                                 href='./pergu/perguntas_excluir.php?id=".$row['ID']."'>Excluir</a>
                                             <a class='btn btn-warning'
-                                                 href='pergunta_editar.php?id=".$row['ID']."'>Editar</a>
+                                                 href='perguntas_editar.php?id=".$row['ID']."'>Editar</a>
                                         </td> 
                                     </tr>";
                             }
